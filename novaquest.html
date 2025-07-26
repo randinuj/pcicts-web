@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovaQuest'25</title>
+    <link href="https://fonts.googleapis.com/css2?family=Product+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style-novaquest.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        
+        <div class="nav-container">
+            <a href="pcicts_website_updated.html" class="logo">
+                PCICTS
+            </a>
+            <ul class="nav-menu">
+                <li><a href="pcicts_website_updated.html">Home</a></li>
+                <li><a href="pcicts_website_updated.html#about">About Us</a></li>
+                    <li><a href="pcicts_website_updated.html#advantages">Advantages</a></li>
+                <li><a href="pcicts_website_updated.html#projects">Projects</a></li>
+                <li><a href="pcicts_website_updated.html#achievements">Achievements</a></li>
+                <li><a href="pcicts_website_updated.html#board">Board</a></li>
+                <li><a href="pcicts_website_updated.html#contact">Contact Us</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="mobile-menu" id="mobile-menu">
+                <a href="pcicts_website_updated.html">Home</a>
+                <a href="pcicts_website_updated.html#about">About Us</a>
+                <a href="pcicts_website_updated.html#advantages">Advantages</a>
+                <a href="pcicts_website_updated.html#projects">Projects</a>
+                <a href="pcicts_website_updated.html#achievements">Achievements</a>
+                <a href="pcicts_website_updated.html#board">Board</a>
+                <a href="pcicts_website_updated.html#contact">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+    <div class="main-content-wrapper">
+    <section class="hero" style="padding: 120px 0 60px;">
+        <div class="container">
+            <div class="title-container">
+                <img src="assets/images/novaquest.png" alt="NovaQuest'25" class="hero-title-image">
+            </div>
+            <p class="hero-subtitle">Intra-School ICT Quiz Competition</p>
+            <div style="display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px;">
+                <a href="https://forms.gle/V3gQL8iJaBTSaRJw5" class="btn"
+                    style="background: rgba(99, 102, 241, 0.1); color: #00ff9d; border: 2px solid #00ff9d;">Register
+                    Now</a>
+                <a href="https://drive.google.com/file/d/18V62dH6NJsSIfjbklC48hnRyIMpUoGbZ/view?usp=drive_link"
+                    class="btn"
+                    style="background: rgba(99, 102, 241, 0.1); color: #00ff9d; border: 2px solid #00ff9d;">View
+                    Rules</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="glass-card" style="margin-bottom: 40px; text-align: center;">
+                <h2 class="section-title" style="text-align: center; margin-bottom: 30px;">About NovaQuest</h2>
+                <p class="about-text" style="text-align: left;">
+                    NovaQuest is President's College ICT Society's flagship annual quiz competition started in 2025, designed for
+                    students from grades 9 to 11 to test and celebrate their knowledge in information and communication
+                    technology. This exciting event brings together the brightest minds from different grades to compete
+                    in a series of challenging rounds covering various ICT domains.
+                </p>
+                <p class="about-text" style="text-align: left;">
+                    From programming fundamentals to emerging technologies like AI and blockchain, NovaQuest covers the
+                    full spectrum of modern ICT knowledge. Participants will face questions ranging from basic computer
+                    literacy to advanced technical concepts, making it an inclusive yet challenging competition for all
+                    skill levels.
+                </p>
+            </div>
+
+            <section class="section">
+                <div class="container">
+                    <h2 class="section-title">Leaderboard</h2>
+                    <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 40px;">
+                        <button id="juniorBtn" class="btn" style="color: #0f1914;">Junior Category</button>
+                        <button id="seniorBtn" class="btn" style="color: #0f1914;">Senior Category</button>
+                    </div>
+                    <div class="glass-card">
+                        <div id="juniorLeaderboard">
+                            <div class="leaderboard-header"
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                                <h3 style="color: #f1f5f9;">Junior Category</h3>
+                                <span style="color: #94a3b8; font-size: 14px;">Last updated: June 25, 2025 - 6:00
+                                    PM</span>
+                            </div>
+                            <div class="leaderboard-table" style="overflow-x: auto;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="border-bottom: 2px solid rgba(99, 102, 241, 0.3);">
+                                            <th style="padding: 15px; text-align: left; color: #00ff9d;">Rank</th>
+                                            <th style="padding: 15px; text-align: left; color: #00ff9d;">Name</th>
+                                            <th style="padding: 15px; text-align: left; color: #00ff9d;">Grade</th>
+                                            <th style="padding: 15px; text-align: center; color: #00ff9d;">Score</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #ffd700;"><i class="fas fa-crown"></i> 1
+                                            </td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Tharuk Siriwardena</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 8</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">68.5%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #c0c0c0;"><i class="fas fa-medal"></i> 2
+                                            </td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Lenuli Punhara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 9</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">64%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #cd7f32;"><i class="fas fa-award"></i> 3
+                                            </td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Shanali Ranjuna</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 8</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">58.4%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">4</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Suwahas Pramuditha</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 8</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">52.8%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">5</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Ushitha Isara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 9</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">47.6%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">6</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Thesidhu Hesara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 8</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">44.4%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">7</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Duleena Jayasekara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 9</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">43.6%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">8</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Nethum Dinsara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 8</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">38.8%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">9</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Dulnitha Vidyarthna</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 8</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">36.8%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">10</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Diyothi Keara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 9</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">34%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div id="seniorLeaderboard" style="display: none;">
+                            <div class="leaderboard-header"
+                                style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+                                <h3 style="color: #f1f5f9;">Senior Category</h3>
+                                <span style="color: #94a3b8; font-size: 14px;">Last updated: June 25, 2025 - 6:00
+                                    PM</span>
+                            </div>
+                            <div class="leaderboard-table" style="overflow-x: auto;">
+                                <table style="width: 100%; border-collapse: collapse;">
+                                    <thead>
+                                        <tr style="border-bottom: 2px solid rgba(99, 102, 241, 0.3);">
+                                            <th style="padding: 15px; text-align: left; color: #00ff9d;">Rank</th>
+                                            <th style="padding: 15px; text-align: left; color: #00ff9d;">Name</th>
+                                            <th style="padding: 15px; text-align: left; color: #00ff9d;">Grade</th>
+                                            <th style="padding: 15px; text-align: center; color: #00ff9d;">Score</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #ffd700;"><i class="fas fa-crown"></i> 1
+                                            </td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Anjana Induwara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 11</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">68.5%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #c0c0c0;"><i class="fas fa-medal"></i> 2
+                                            </td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Matheesha Uwanthara</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">67.4%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #cd7f32;"><i class="fas fa-award"></i> 3
+                                            </td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Senuja Wickramasinghe</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">44%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">4</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Sasmira Jayaweera</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">42%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">5</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Sasviru Dewmina</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 11</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">41.7%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">6</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Dinuli Nethumya</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 11</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">35.4%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">7</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Nesandu Wickramasinghe</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">34%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">8</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Damsara Senudi</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">23.40%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">9</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Ishalka Uchith</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">22.5%</td>
+                                        </tr>
+                                        <tr style="border-bottom: 1px solid rgba(99, 102, 241, 0.1);">
+                                            <td style="padding: 15px; color: #94a3b8;">10</td>
+                                            <td style="padding: 15px; color: #f1f5f9;">Vidath Pandula</td>
+                                            <td style="padding: 15px; color: #94a3b8;">Grade 10</td>
+                                            <td style="padding: 15px; text-align: center; color: #fff;">22%</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        const juniorBtn = document.getElementById('juniorBtn');
+                        const seniorBtn = document.getElementById('seniorBtn');
+                        const juniorLeaderboard = document.getElementById('juniorLeaderboard');
+                        const seniorLeaderboard = document.getElementById('seniorLeaderboard');
+                        juniorBtn.onclick = function () {
+                            juniorLeaderboard.style.display = '';
+                            seniorLeaderboard.style.display = 'none';
+                            juniorBtn.style.background = '#00ff9d';
+                            seniorBtn.style.background = '#00ff9d';
+                        };
+                        seniorBtn.onclick = function () {
+                            juniorLeaderboard.style.display = 'none';
+                            seniorLeaderboard.style.display = '';
+                            juniorBtn.style.background = '#00ff9d';
+                            seniorBtn.style.background = '#00ff9d';
+                        };
+                    </script>
+                    <div style="text-align: center; margin-top: 30px;">
+                        <div style="display: flex; gap: 15px; justify-content: center; flex-wrap: wrap;">
+                            <div style="background: rgba(99, 102, 241, 0.1); padding: 15px 20px; border-radius: 10px;">
+                                <strong style="color: #00ff9d;">Total Participants:</strong>
+                                <span style="color: #f1f5f9;">53</span>
+                            </div>
+                            <div style="background: rgba(99, 102, 241, 0.1); padding: 15px 20px; border-radius: 10px;">
+                                <strong style="color: #00ff9d;">Completed Rounds:</strong>
+                                <span style="color: #f1f5f9;">2/2</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer class="footer">
+                <div class="container">
+                 <div class="footer-content" style="display: flex; flex-direction: column; align-items: center;">
+                  <div class="footer-logos" style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 8px;">
+                   <img src="school-logo.png" alt="School Logo" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
+                   <img src="linear-white-small.png" alt="PCICTS Logo" style="height: 50px; width: auto; filter: brightness(0) invert(1);">
+                  </div>
+                  <div class="footer-text" style="text-align: center;">
+                   <p class="college-name" style="color: white; font-size: 1rem; margin-bottom: 5px; font-weight: normal; text-transform: uppercase;">
+                    PRESIDENT'S COLLEGE ICT SOCIETY
+                   </p>
+                   <p style="color: white; font-size: 1rem; margin: 0; font-weight: normal; text-transform: uppercase;">
+                    © 2025 PCICTS. ALL RIGHTS RESERVED.
+                   </p>
+                  </div>
+                 </div>
+                </div>
+                </div>
+               </footer>
+               <!--<button class="scroll-to-top" id="scrollToTop">
+                <i class="fas fa-arrow-up">
+                </i>
+               </button>-->
+               <script>
+                // Mobile menu toggle
+                     const hamburger = document.getElementById('hamburger');
+                     const mobileMenu = document.getElementById('mobile-menu');
+             
+                     hamburger.addEventListener('click', () => {
+                         hamburger.classList.toggle('active');
+                         mobileMenu.classList.toggle('active');
+                     });
+             
+                     // Close mobile menu when clicking on a link
+                     const mobileLinks = mobileMenu.querySelectorAll('a');
+                     mobileLinks.forEach(link => {
+                         link.addEventListener('click', () => {
+                             hamburger.classList.remove('active');
+                             mobileMenu.classList.remove('active');
+                         });
+                     });
+             
+                     // Scroll to top button
+                     const scrollToTopBtn = document.getElementById('scrollToTop');
+             
+                     window.addEventListener('scroll', () => {
+                         if (window.pageYOffset > 300) {
+                             scrollToTopBtn.classList.add('visible');
+                         } else {
+                             scrollToTopBtn.classList.remove('visible');
+                         }
+                     });
+             
+                     scrollToTopBtn.addEventListener('click', () => {
+                         window.scrollTo({
+                             top: 0,
+                             behavior: 'smooth'
+                         });
+                     });
+             
+                     // Add some interactive animations
+                     const observerOptions = {
+                         threshold: 0.1,
+                         rootMargin: '0px 0px -50px 0px'
+                     };
+             
+                     const observer = new IntersectionObserver((entries) => {
+                         entries.forEach(entry => {
+                             if (entry.isIntersecting) {
+                                 entry.target.style.opacity = '1';
+                                 entry.target.style.transform = 'translateY(0)';
+                             }
+                         });
+                     }, observerOptions);
+             
+                     // Observe all cards for animation
+                     const cards = document.querySelectorAll('.glass-card, .advantage-card, .board-member, .project-card, .achievement-card, .contact-card');
+                     cards.forEach(card => {
+                         card.style.opacity = '0';
+                         card.style.transform = 'translateY(20px)';
+                         card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                         observer.observe(card);
+                     });
+             
+                     // Close mobile menu when clicking outside
+                     document.addEventListener('click', (e) => {
+                         if (!hamburger.contains(e.target) && !mobileMenu.contains(e.target)) {
+                             hamburger.classList.remove('active');
+                             mobileMenu.classList.remove('active');
+                         }
+                     });
+               </script>
+               
+              </body>
+             </html>

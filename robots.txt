@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://pcicts.org/sitemap.xml
+
+# Disallow admin or private areas (if any)
+# Disallow: /admin/
+# Disallow: /private/
+
+# Allow all assets
+Allow: /assets/
+Allow: /assets/css/
+Allow: /assets/images/
+Allow: /assets/fonts/ 
